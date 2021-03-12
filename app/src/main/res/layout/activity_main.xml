@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+        <Button
+            android:id="@+id/btn_main_textview"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btn_main_dialog"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="Doalog" />
+
+        <Button
+            android:id="@+id/btn_main_toast"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="Toast" />
+
+
+        <Button
+            android:id="@+id/btn_main_image"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="Images" />
+
+        <Button
+            android:id="@+id/btn_main_video"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="Videos" />
+
+        <Button
+            android:id="@+id/btn_main_other"
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:text="Others" />
+    </LinearLayout>
+</layout>

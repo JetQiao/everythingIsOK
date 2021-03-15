@@ -138,10 +138,7 @@ public final class LogUtils
             }
             final TagHead tagHead = processTagAndHead(tag);
             final String body = processBody(type_high, contents);
-            if (CONFIG.isLog2ConsoleSwitch() && type_low >= CONFIG.mConsoleFilter)
-            {
-                print2Console(type_low, tagHead.tag, tagHead.consoleHead, body);
-            }
+            print2Console(type_low, tagHead.tag, tagHead.consoleHead, body);
 
         }
     }
@@ -251,10 +248,7 @@ public final class LogUtils
         {
             return NULL;
         }
-        //        if (type == JSON)
-        //            return LogFormatter.object2String(object, JSON);
-        //        if (type == XML)
-        //            return LogFormatter.object2String(object, XML);
+
         return formatObject(object);
     }
 
@@ -446,7 +440,7 @@ public final class LogUtils
 
     public static final class Config
     {
-        private final String mFilePrefix = "util";// The file prefix of log.
+        //        private final String mFilePrefix = "util";// The file prefix of log.
         private final boolean mLogSwitch = true;  // The switch of log.
         private final boolean mLog2ConsoleSwitch = true;  // The logcat's switch of log.
         private final String mGlobalTag = "";    // The global tag of log.
@@ -454,7 +448,7 @@ public final class LogUtils
         private final boolean mLogHeadSwitch = true;  // The head's switch of log.
         private final boolean mLogBorderSwitch = true;  // The border's switch of log.
         private final boolean mSingleTagSwitch = true;  // The single tag of log.
-        private final int mConsoleFilter = V;     // The console's filter of log.
+        //        private final int mConsoleFilter = V;     // The console's filter of log.
         private final int mFileFilter = V;     // The file's filter of log.
         private final int mStackDeep = 1;     // The stack's deep of log.
         private final int mStackOffset = 0;     // The stack's offset of log.
@@ -802,24 +796,24 @@ public final class LogUtils
         {
             Type[] genericInterfaces = objClass.getGenericInterfaces();
             String className;
+            Type type;
             if (genericInterfaces.length == 1)
             {// interface
-                Type type = genericInterfaces[0];
+                type = genericInterfaces[0];
                 while (type instanceof ParameterizedType)
                 {
                     type = ((ParameterizedType) type).getRawType();
                 }
-                className = type.toString();
             } else
             {// abstract class or lambda
-                Type type = objClass.getGenericSuperclass();
+                type = objClass.getGenericSuperclass();
                 while (type instanceof ParameterizedType)
                 {
                     type = ((ParameterizedType) type).getRawType();
                 }
                 assert type != null;
-                className = type.toString();
             }
+            className = type.toString();
 
             if (className.startsWith("class "))
             {

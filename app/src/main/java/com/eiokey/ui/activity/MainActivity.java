@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.btn_main_textview:
                 LogUtils.d("--------------");
-                ToastUtil.showToast(this, "显示TextView");
+//                ToastUtil.showToast(this, "显示TextView");
+                ToastUtil.showMsg(this,"Test---");
                 break;
 
             case R.id.btn_main_dialog:

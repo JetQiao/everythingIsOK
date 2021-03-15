@@ -9,45 +9,52 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20px"
+        android:layout_margin="10dp"
         android:orientation="vertical"
         tools:context=".activity.MainActivity">
 
         <Button
             android:id="@+id/btn_main_textview"
-            android:layout_width="500px"
-            android:layout_height="100px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:text="TextView" />
 
         <Button
             android:id="@+id/btn_main_dialog"
-            android:layout_width="500px"
-            android:layout_height="100px"
-            android:text="Doalog" />
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Dialog" />
 
         <Button
-            android:id="@+id/btn_main_toast"
-            android:layout_width="500px"
-            android:layout_height="100px"
-            android:text="Toast" />
+            android:id="@+id/btn_main_tips"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Tips"
+            tools:ignore="HardcodedText" />
 
 
         <Button
             android:id="@+id/btn_main_image"
-            android:layout_width="500px"
-            android:layout_height="100px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:text="Images" />
 
         <Button
             android:id="@+id/btn_main_video"
-            android:layout_width="500px"
-            android:layout_height="100px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:text="Videos" />
 
         <Button
+            android:id="@+id/btn_main_recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="recycleview" />
+
+        <Button
             android:id="@+id/btn_main_other"
-            android:layout_width="500px"
-            android:layout_height="100px"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:text="Others" />
     </LinearLayout>
 </layout>

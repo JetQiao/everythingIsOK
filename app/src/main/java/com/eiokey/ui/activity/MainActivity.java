@@ -1,5 +1,6 @@
 package com.eiokey.ui.activity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,7 +14,7 @@ import com.eiokey.ui.views.toast.ToastUtil;
 
 
 /**
- * @author Administrator
+ * @author JetQiao
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v)
     {
@@ -42,14 +44,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             case R.id.btn_main_textview:
                 LogUtils.d("--------------");
-//                ToastUtil.showToast(this, "显示TextView");
-                ToastUtil.showMsg(this,"Test---");
+                ToastUtil.showMsg(this, "Test---");
                 break;
 
             case R.id.btn_main_dialog:
                 break;
 
-            case R.id.btn_main_toast:
+                //Tips:Toast & snackbar
+            case R.id.btn_main_tips:
                 break;
             case R.id.btn_main_image:
                 break;

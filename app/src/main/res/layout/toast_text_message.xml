@@ -3,15 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_toast_text_msg"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="10dp">
 
     <TextView
         android:id="@+id/tv_toast_text_msg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:gravity="center"
         android:hint="提示"
         android:textColor="#000000"
+        android:textSize="20sp"
         tools:ignore="HardcodedText,PxUsage" />
 
 </LinearLayout>

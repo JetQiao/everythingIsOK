@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context=".activity.tips.TipsActivity">
+
+        <Button
+            android:id="@+id/btn_toast_default"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Default"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Top"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_left"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Left"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_right"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Right"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Center"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bottom"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_bg_default"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bg_Default"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_bg_center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bg_Center"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_img_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Img_Top"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_img_left"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Img_Left"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_bg_img_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bg_Img_Top"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_toast_bg_img_left"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Bg_Img_Left"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</layout>

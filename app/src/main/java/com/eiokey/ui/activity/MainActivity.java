@@ -1,19 +1,16 @@
 package com.eiokey.ui.activity;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.eiokey.library.activity.BaseActivity;
-import com.eiokey.library.utils.logutils.LogUtils;
 import com.eiokey.ui.R;
+import com.eiokey.ui.activity.dialog.DialogActivity;
 import com.eiokey.ui.activity.tips.TipsActivity;
 import com.eiokey.ui.databinding.ActivityMainBinding;
-import com.eiokey.ui.views.toast.ToastUtil;
 
 
 /**
@@ -37,6 +34,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener
     protected void initView()
     {
         activityMainBinding.btnMainTextview.setOnClickListener(this);
+        activityMainBinding.btnMainDialog.setOnClickListener(this);
         activityMainBinding.btnMainTips.setOnClickListener(this);
     }
 
@@ -56,6 +54,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener
                 break;
 
             case R.id.btn_main_dialog:
+                openActivity(DialogActivity.class, false);
                 break;
 
             //Tips:Toast & snackbar

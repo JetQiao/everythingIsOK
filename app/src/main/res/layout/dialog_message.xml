@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
 
     <RelativeLayout
-        android:id="@+id/ly_root"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/black">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_content"
+        <LinearLayout
+            android:id="@+id/rl_dl_msg_root"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="内容"
-            android:textColor="#f00"
-            android:textSize="36px" />
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_round_white"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
 
+            <TextView
+                android:id="@+id/tv_dl_msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="内容"
+                android:textColor="#f00"
+                android:textSize="36px"
+                tools:ignore="HardcodedText,PxUsage" />
+        </LinearLayout>
     </RelativeLayout>
-
-</RelativeLayout>
+</layout>

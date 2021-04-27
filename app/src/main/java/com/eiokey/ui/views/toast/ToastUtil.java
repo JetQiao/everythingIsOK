@@ -179,6 +179,17 @@ public class ToastUtil
         toast.show();
     }
 
+    /**
+     * description  显示带图片位置的Toast
+     * param    mContext        context
+     * param    text            message
+     * param    resourceId      背景图片资源
+     * param    iconResourceId  icon图片资源
+     * param    iconPosition    icon图片位置
+     * param    position        toast的位置
+     * param    duration        显示时间
+     * return
+     */
     private static void showImgUtils(Context mContext, String text, int resourceId, int iconResourceId, int iconPosition, int position, int duration)
     {
         if (toast != null)

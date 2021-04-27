@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context=".activity.dialog.DialogActivity">
+
+        <Button
+            android:id="@+id/btn_dialog_single"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="message"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_dialog_tips_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Top"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_dialog_tips_center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Center"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_dialog_tips_center_left"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Center--Left"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_dialog_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="2Buttons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn_dialog_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="EditText"
+            tools:ignore="HardcodedText" />
+
+
+        <Button
+            android:id="@+id/btn_dialog_edt_more"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="EditText_More"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</layout>
